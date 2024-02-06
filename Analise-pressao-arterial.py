@@ -10,7 +10,7 @@ FROM dados_cardiacos
 WHERE id_pessoa = ?  -- Substitua ? pelo ID específico da pessoa
 ORDER BY data_registro;
 """
-id_pessoa = 'ID_DA_PESSOA'  # Substitua 'ID_DA_PESSOA' pelo ID real da pessoa
+id_pessoa = 'ID_DA_PESSOA' 
 df = pd.read_sql_query(query, conn, params=[id_pessoa])
 
 
