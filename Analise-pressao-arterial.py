@@ -2,8 +2,7 @@ import sqlite3
 import pandas as pd
 
 
-conn = sqlite3.connect('health_data.db')  # Substitua 'health_data.db' pelo caminho do seu banco de dados real
-
+conn = sqlite3.connect('health_data.db')  
 
 query = """
 SELECT data_registro, pressao_sistolica, pressao_diastolica, batimentos_cardiacos
